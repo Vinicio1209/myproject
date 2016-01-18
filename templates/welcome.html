@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>iMed Biomedical</title>
+		<meta name="viewport" content="width=device-width,
+		initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='welcome.css') }}" media="screen">
+		<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+	</head>
+	<body>
+		<div id="upper">
+			<img src="{{ url_for('static', filename='iMedBiomedical-Logo.jpg') }}" alt="iMedBiomedical-Logo">
+		</div>
+		<div id="section">
+			<h4>Welcome to iMed Biomedical</h4>
+			<h4>Equipment Management Software</h4>
+			<p style="text-align:center">Click <a href="/login">here</a> to login.</p>
+			{% for message in get_flashed_messages() %}
+			{{ message }}
+			{% endfor %}
+		</div>
+		<div id="lower">
+		<p id="p1">***-***-****</p>
+		<p id="p1">info@imedbiomedical.com</p>
+	<div id="end">
+		<p>© 2015 iMed Biomedical, Inc.</p>
+		<p>developed by blah</p>
+	</div>
+	</body>
+</html>

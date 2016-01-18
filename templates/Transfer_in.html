@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>iMed Biomedical</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='transfer.css') }}" media="screen">
+		<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="dropdown">
+			<button class="dropbtn">Options</button>
+			<div class="dropdown-content">
+				<a target='/home' href='/home'>Home</a>
+				<a target= '/home' href='/logout'>Logout</a>
+			</div>
+		</div>
+	<div>
+		<p> Serial Number <input id="box" type="text" placeholder="Serial Number" name="serialnumber" value="{{ request.form.serialnumber }}"></p>
+		<br>
+		<p>Asset Number<input id="box" type="text" placeholder="Asset Number" name="password" value="{{ request.form.assetnumber }}"></p>
+		<br>
+		<p>Owner<input id="box" type="text" placeholder="Owner" name="owner" value="{{ request.form.owner }}"></p>
+		<br>
+		<p>Location<input id="box" type="text" placeholder="Location" name="location" value="{{ request.form.location }}"></p>
+		<br>
+		<p>Status<input id="box" type="text" placeholder="Status" name="status" value="{{ request.form.status }}"></p>
+	</div>	
+	</body>
+</html>

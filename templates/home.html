@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>iMed Biomedical</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='home.css') }}" media="screen">
+		<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="dropdown">
+			<button class="dropbtn">Tools</button>
+			<div class="dropdown-content">
+				<a href='/login'>Login</a>
+				<a href='/logout'>Logout</a>
+				<a href='/welcome'>Welcome</a>
+			</div>
+		</div>
+
+			<button class="dropbtn">Settings</button>
+			<div class="dropdown-content">
+				<a href='http://www.yahoo.com'>Yahoo</a>
+				<a href='http://www.google.com'>Google</a>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropdbtn">Hello</button>
+			<div class="dropdown-content">
+				<p>Hello World!</p>
+			</div>
+		</div>
+
+		<ul id="hbar">
+			<li><a href='/Dirty'>Dirty</a></li>
+			<li><a href='/Clean_Inspected'>Clean and Inspected</a></li>
+			<li><a href='/Repair'>Repair</a></li>
+			<li><a href='/Ready'>Ready</a></li>
+			<ul style="float:right;list-style-type:none;">
+				<li><a href='/Lost'>Lost</a></li>
+				<li><a href='/Quarantine'>Quarantine</a></li>
+				</form>
+			</ul>
+		</ul>
+		<ul id="vbar">
+			<li><a href='/Transfer_in' target= "work_box">Transfer In</a></li>
+			<li><a href='/clean_insp'>Cleaned & Inspected</a></li>
+			<li><a href='/preventive'>Preventive Maintenance</a></li>
+			<li><a href='/repairs'>Repairs</a></li>
+			<li><a href='/transfer_out'>Transfer Out</a></li>
+		</ul>
+		<iframe id="box" width= 1000px height= 600px name="work_box"></iframe>
+	</body>
+</html>

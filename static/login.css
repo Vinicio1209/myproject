@@ -1,0 +1,43 @@
+<style>
+#sect1{}
+#upper {
+	content: fixed;
+	max-width: 800px;
+	margin: auto;
+	border-bottom: 3px solid black;
+
+}
+
+#section {
+	text-align: center;
+	padding-top: 60px;
+	height: 290px;
+	max-width: 800px;
+	margin: auto;
+
+}
+#box {
+	width: 175px;
+}
+#p1 {
+	padding-top: 5px;
+}
+
+#lower {
+	background-color: #2f82ac;
+	color: white;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+	height: 50px;
+	max-width: 800px;
+	margin: auto;
+}
+#end {
+	color: black;
+	text-align: center;
+	font-size: 10px;
+	font-family: Arial;
+}
+
+</style>
